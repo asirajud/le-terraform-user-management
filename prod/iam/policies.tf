@@ -63,6 +63,8 @@ resource "aws_iam_policy" "ec2_route_table_policy" {
           "ec2:DescribeSubnets",
           "ec2:DescribeInternetGateways",
           "ec2:DescribeNatGateways",
+          "ec2:CreateNatGateway",
+          "ec2:DeleteNatGateway",
           "ec2:CreateTags",
           "ec2:DeleteTags",
           "ec2:DescribeTags",
