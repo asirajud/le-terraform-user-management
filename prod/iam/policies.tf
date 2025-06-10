@@ -57,6 +57,7 @@ resource "aws_iam_policy" "ec2_route_table_policy" {
           "ec2:DeleteRoute",
           "ec2:AssociateRouteTable",
           "ec2:DisassociateRouteTable",
+          "ec2:ReplaceRouteTableAssociation",
           "ec2:DescribeRouteTables",
           "ec2:DescribeVpcs",
           "ec2:DescribeSubnets",
@@ -64,7 +65,12 @@ resource "aws_iam_policy" "ec2_route_table_policy" {
           "ec2:DescribeNatGateways",
           "ec2:CreateTags",
           "ec2:DeleteTags",
-          "ec2:DescribeTags"
+          "ec2:DescribeTags",
+          "ec2:AllocateAddress",
+          "ec2:AssociateAddress",
+          "ec2:DisassociateAddress",
+          "ec2:ReleaseAddress",
+          "ec2:DescribeAddresses"
         ]
         Resource = "*"
       }
